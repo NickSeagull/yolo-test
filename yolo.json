@@ -1,0 +1,27 @@
+{
+  "name": "InvoiceService",
+  "description": "A service to manage and process invoices.",
+  "commands": [
+    {
+      "name": "test",
+      "description": "Run all tests for the InvoiceService",
+      "script": "npm run test",
+      "args": [],
+      "env": []
+    },
+    {
+      "name": "deploy",
+      "script": "./deploy.sh",
+      "description": "Deploy the service to a specified environment",
+      "args": [
+        {
+          "name": "env",
+          "description": "The environment to deploy to",
+          "required": true,
+          "type": "Text"
+        }
+      ],
+      "env": []
+    }
+  ]
+}
